@@ -1,0 +1,47 @@
+fieldset {
+    background-color: #501040;
+    margin-right: 50%;
+    text-align: left;
+    
+}
+
+input {
+    color: #ffffff;
+}
+
+div  {
+    background-color: #812348;
+    border-radius: 30px;
+    padding: 10px;
+    
+}
+
+div p {
+    color: #E0D68A;
+    margin-bottom: -.1px;
+    
+}
+
+div input {
+    background-color: #501040;
+    border: 1px solid #E0D68A;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+div#campo {
+    color: aliceblue;
+}
+
+textarea {
+    padding-right: 200px;
+    padding-bottom: 50px;
+}
+
+::placeholder {
+    color: #ffffff;
+}
+
+input#cIdade {
+    padding-right: 50px;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/assets/style.css">
@@ -7,16 +8,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Pesquisa</title>
 </head>
+
 <body>
     <form id="fContato">
         <fieldset id="registro">
-            <p>Nome</p>
-            <input type="text" name="tNome" id="cNome" size="50" placeholder="Ex.: Maria das Graças" autofocus>
-            <p>Email</p>
-            <input type="email" name="tEmail" id="cEmail" size="50" placeholder="Ex.: fulano@email.com">
-            <p>Idade</p>
-            <input type="number" name="tIdade" id="cIdade" min="10" max="99" placeholder="Idade">
+            <div id="field">
+                <div id="campo">
+                    <p>Nome</p>
+                    <input type="text" name="tNome" id="cNome" size="50" placeholder="Ex.: Maria das Graças" autofocus>
+                </div>
+                <div id="campo">
+                    <p>Email</p>
+                    <input type="email" name="tEmail" id="cEmail" size="50" placeholder="Ex.: fulano@email.com">
+                </div>
+                <div id="campoI">
+                    <p>Idade</p>
+                    <input type="number" name="tIdade" id="cIdade" min="10" max="99" placeholder="10 à 99" >
+                </div>
+                <div id="campo">
+                    <p>O que você é atualmente?</p>
+                    <select name="tProfissao" id="cProfissao" required>
+                        <option disabled selected value id="legenda">Escolha uma opção</option>
+                        <option>Estudante</option>
+                        <option>Trabalho meio-período</option>
+                        <option>Trabalho integral</option>
+                        <option>Prefiro não dizer</option>
+                        <option>Outro</option>
+                    </select>
+                </div>
+                <div id="campo">
+                    <p>Você recomendaria esse formulário para um amigo?</p>
+                    <label for="cDef"><input type="radio" id="cDef" checked name="tOpt">Definitivamente</label><br>
+                    <label for="cTalvez"><input type="radio" id="cTalvez" name="tOpt">Talvez</label><br>
+                    <label for="cNao"><input type="radio" id="cNao" name="tOpt">Não</label>
+                </div>
+                <div id="campo">
+                    <p>O que você gostaria que melhorasse?</p>
+                    <label for="cu"><input type="checkbox" id="cu">Cu</label><br>
+                    <label for="xinim"><input type="checkbox" id="xinim">Xinim</label><br>
+                    <label for="piroca"><input type="checkbox" id="piroca">Piroca</label>
+                </div>
+                <p>Algum comentário ou sugestão?</p>
+                <textarea placeholder="Faça seu comentário aqui..."></textarea>
+            </div>
         </fieldset>
     </form>
 </body>
+
 </html>
